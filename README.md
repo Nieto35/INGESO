@@ -26,7 +26,14 @@ git clone https://github.com/Nieto35/INGESO.git
 cd INGESO
 ```
 
-### 2. Levantar los servicios con Docker
+### 2. Configurar variables de entorno
+
+```bash
+# Copiar el archivo de ejemplo de variables de entorno
+cp .env.example .env
+```
+
+### 3. Levantar los servicios con Docker
 
 ```bash
 docker-compose up -d --build
