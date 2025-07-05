@@ -44,7 +44,13 @@ docker-compose exec backend composer install
 docker-compose exec frontend npm install
 ```
 
-### 5. Esperar a que los servicios estén listos
+### 5. Ejecutar migraciones de la base de datos
+
+```bash
+docker-compose exec backend php artisan migrate
+```
+
+### 6. Esperar a que los servicios estén listos
 
 El proceso puede tomar unos minutos la primera vez. Los servicios estarán disponibles en:
 
